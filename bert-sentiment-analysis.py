@@ -41,3 +41,10 @@ trainer = Trainer(
     train_dataset=train_dataset,
     eval_dataset=eval_dataset
 )
+
+trainer.train()
+
+trainer.evaluate()
+
+model.save_pretrained('./saved_model')
+tokenizer.save_pretrained('./saved_model')
